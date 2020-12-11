@@ -117,6 +117,7 @@ nav {
 .hero-introduction  {
   flex: 2 1 40rem;
   text-align: center;
+  justify-content: flex-start;
  
 
  
@@ -137,7 +138,8 @@ nav {
 
 .hero-introduction button:hover{
   color:rgb(224, 155, 27);
-  border: 3px solid rgb(224, 155, 27)
+  border: 3px solid rgb(224, 155, 27);
+  margin-bottom: 10rem;
 }
 
 .hero-images {
@@ -239,8 +241,7 @@ nav {
   left: 1%;
   bottom: 0%;
   margin: 2em;
-  
- 
+   
 }
 
 .media ul {

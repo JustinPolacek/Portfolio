@@ -9,8 +9,7 @@ function scrollAppear(){
   var screenPosition = window.innerHeight / 1.6;
   if(introPosition < screenPosition){
       curvedText.classList.add('intro-appear');
-      icons.classList.add('intro-appear')
-      
+      icons.classList.add('intro-appear');
   }
 }
 

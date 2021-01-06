@@ -10,6 +10,7 @@ function scrollAppear(){
   if(introPosition < screenPosition){
       curvedText.classList.add('intro-appear');
       icons.classList.add('intro-appear');
+      
   }
 }
 

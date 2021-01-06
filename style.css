@@ -75,6 +75,8 @@ h1 {
   font-family: "Vibes", sans-serif;
 }
 
+
+
 /* Nav Section */
 .main-head {
   z-index: 1;
@@ -95,6 +97,7 @@ nav {
   color:  rgb(224, 155, 27);
   margin-left: 20px;
   font-weight: 300;
+  letter-spacing: 2px;
 }
 .nav-links {
   display: flex;
@@ -121,9 +124,10 @@ nav {
   flex: 2 1 40rem;
   text-align: center;
   justify-content:center;
-  background-color: #020c1b;
+  background-color: #020d1c;
   color:rgb(224, 155, 27);
   overflow: hidden;
+  font-weight: 200;
 }
 .hero-introduction p {
   padding: 2rem 8rem;
@@ -141,7 +145,7 @@ nav {
   display:block;
   height: 45px;
   width: 150px;
-  margin: 12px 10px;
+  margin: 20px 20px;
   padding: 12px 15px;
   font-weight: 700;
   font-size: 15px;
@@ -187,7 +191,8 @@ nav {
 button{
   border: none;
   padding: 0;
-  background-color: #070617;;
+  background-color: #020c1b;
+ 
 }
 
 
@@ -224,6 +229,7 @@ button{
   }
   .hero-introduction p {
     padding: 5rem 3rem;
+    font-size: 17px;
   }
   /* BURGER THING */
   .burger {
@@ -387,7 +393,7 @@ button{
 
 
 .hide{ 
-  background: #020c1b;
+  background: rgb(2, 12, 27);
   overflow: hidden;
 
 }
@@ -421,7 +427,7 @@ button{
 .curved-text h1{
   font-size: 5rem;
   margin-bottom: 10px;
-  font-family: 
+
 }
 
 .icons{
@@ -454,7 +460,7 @@ button{
 
 
 #curved-div {
-  background:  #020c1b;
+  background:  #020d1c;
   color: #FFF;
   text-align: center;
   overflow: hidden;
@@ -470,11 +476,11 @@ button{
 }
 #curved-div svg {
   display: flex;
-  background-color: #020c1b;
+  background-color: #020d1c;
 
 }
 #curved-div.upper {
-  background:  #020c1b;
+  background:  #020d1c;
 
 }
 
@@ -540,65 +546,113 @@ button{
 
 
 #projects{
-    min-height: 50vh;
-    display: flex;
-    width: 100%;
-    display: grid;
-    height: 100%;
-    align-content: center;
-    justify-content: center;
-    text-align: center;
-    transform: translateY(-50%);
-    
+    min-height: 100vh;
 }
 
-.built{
-
-  font-size: 6rem;
-  color:#070617;
-  transition: 1s all ease-in-out;
-  transform: translateY(-30px);
+.project-intro{
+  color: black;
+  display: flex;
+  justify-content: center;
+  color: rgb(224, 155, 27);
+  
 }
 
 .box{
-  background-color: #070617;
-  height: 200px;
-  width: 200px;
   display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap; 
+  
+}
+
+.box-1{
+  background-color: #020c1b;
+  height: 300px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 30px;
+  margin-top: 30px;
+  
+}
+
+.box-btn{
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 1px;
+  color: rgb(224, 155, 27);
+  border: 2px rgb(224, 155, 27) solid;
+  border-radius: 5px;
+  text-transform: uppercase;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  padding: 12px 15px;
+}
+
+.box-btn:hover {
+  color: whitesmoke;
+  background: rgb(224, 155, 27);
+}
+
+.box-2{
+  background-color: #020c1b;
+  height: 300px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 30px;
+  margin-top: 30px;
+  
+  
+
+}
+
+.box-3{
+  background-color: #020c1b;
+  height: 300px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 30px;
+  margin-top: 30px;
+
+ 
+
+}
+.box-4{
+  background-color: #020c1b;
+  height: 300px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 30px;
+  margin-bottom: 50px;
+  margin-top: 30px;
+ 
+
 }
 
 
 
 
-  
- /* COMPETENCIES */
-
- .competencies {
-  background: rgb(243, 234, 234);
-  color: #f5f5f5;
-  min-height: 30vh;
-  display: flex;
-  justify-content: center;
 
 
- }
 
- .competencies h5{
-   margin-left: 200px;
-   margin-bottom: 30px;
-   font-size: 20px;
-   margin-top: 20px;
-   letter-spacing: 1px;
- }
-  
- .comp-para p{
-   padding: 5px;
-   font-size: 18px;
-   font-weight: 300;
-   margin: 5px;
-   
- }
+
+
+ 
   
   
   
@@ -638,7 +692,7 @@ button{
   min-height: 100vh;
   display: flex;
   flex-wrap: wrap;
-  background: url(/img/wavephoto2.jpg);
+  background: url(/img/bluewave.jpg);
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -792,5 +846,7 @@ label{
 @media only screen and (max-width: 340px) {
   .footer .col {
     width: 100%;
+    
   }
+
 }

@@ -47,10 +47,9 @@ tl.to('.text-2', {y:"0%", duration: 1.5, duration: 0.75});
 tl.to('.text-3', {y:"0%", duration: 1.5, duration: 0.75});
 tl.to('.slider', {x: "-100%", duration: 1.5, delay: 0.5});
 tl.to('.intro', {x: "-100%", duration: 1},"-=1");
-tl.To('.hero-introduction', {opacity: 0}, {opacity: 1, duration: 1}, '-=1');
+tl.To('.hero-introduction', {opacity: 0}, {opacity: 1, duration: 1}, '-=2');
 tl.to('.media',  { opacity: 0}, { opacity: 1, duration: 1}, '-=1');
 
-//tl.to('.hero-introduction', {y: "25%", duration: 1},"-=.5");
 
 
 

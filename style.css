@@ -35,10 +35,9 @@ h1 {
   font-size: var(--header1);
 }
 li,
-button,
 label,
 input,
-a,
+
 p {
   font-size: var(--text);
 }
@@ -56,15 +55,21 @@ h5 {
 ul {
   list-style: none;
 }
-a {
+ a {
   text-decoration: none;
   color: rgb(224, 155, 27);
   font-family: 'Titillium Web', sans-serif;
   font-weight: 300;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   font-size: 20px;
   
+}
 
+
+a:hover{
+  color: rgb(113, 113, 199);
+  transition: all ease-in-out;
+  
 }
 .flex {
   display: flex;
@@ -96,18 +101,28 @@ nav {
   align-items: center;
   min-height: 2vh;
   padding: 2rem 0rem;
-  background-color: #020c1b;
+  background-color: rgb(2, 13, 28);
 }
-#logo {
+ #logo {
   flex: 1 1 20rem;
   color:  rgb(224, 155, 27);
   margin-left: 20px;
   font-weight: 500;
   letter-spacing: 2px;
   font-family: 'Titillium Web', sans-serif;
-
-
 }
+
+
+
+
+ #logo  img{
+  height: 45px;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+
+
 .nav-links {
   display: flex;
   justify-content: space-around;
@@ -117,13 +132,14 @@ nav {
 
 
 .hero {
-  min-height: 60vh;
+  min-height: 100vh;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   overflow: hidden;
   flex-direction: row;
   background-position: center top;
+  background-color: 020d1c;
 
 }
 
@@ -135,57 +151,56 @@ nav {
   justify-content:center;
   background-color: #020d1c;
   color:rgb(224, 155, 27);
-  overflow: hidden;
   font-weight: 100;
   font-family: 'Titillium Web', sans-serif;
 
 
+
+
 }
 .hero-introduction p {
-  padding: 2rem 8rem;
+  margin-bottom: 16px;
   color: var(--gray-text);
-  color: #fff;
+  color:  white;
   font-family: 'Titillium Web', sans-serif;
   font-size: 2.2rem;
+  letter-spacing: 1px;
 
 }
 .hero-introduction h2 {
-  padding-top: 3rem;
   font-family: 'Titillium Web', sans-serif;
-  letter-spacing: 3px;
-  font-weight: 300;
-  font-size: 7.5rem;
+  letter-spacing: 6px;
+  font-weight: 100;
+  font-size: 6.5rem;
 }
 
 
- .btn a{
-  position: relative;
-  display:block;
-  height: 45px;
-  width: 150px;
-  margin: 20px 20px;
-  padding: 12px 15px;
+
+ a .btn{
   font-weight: 700;
   font-size: 15px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   color: rgb(224, 155, 27);
   border: 2px rgb(224, 155, 27) solid;
-  border-radius: 200px;
+  border-radius: 5px;
   text-transform: uppercase;
-  outline: 0;
-  overflow:hidden;
   background: none;
   cursor: pointer;
-  transition:         0.08s ease-in;
-  -o-transition:      0.08s ease-in;
-  -ms-transition:     0.08s ease-in;
-  -moz-transition:    0.08s ease-in;
-  -webkit-transition: 0.08s ease-in;
-}
+  display: flex;
+  padding: 12px 20px;
+  font-family: 'Titillium Web', sans-serif;
+  letter-spacing: 6px;
+  
 
-.btn a:hover {
+
+ }
+
+
+
+a .btn:hover {
   color: whitesmoke;
   background: rgb(224, 155, 27);
+  transition: all 0.3s ease-in-out;
 }
 
 .hero-introduction::before {
@@ -206,30 +221,38 @@ nav {
   
 }
 
-button{
-  border: none;
-  padding: 0;
-  background-color: #020c1b;
- 
-}
+
 
 
 
 .hero-images {
   flex: 1 1 40rem;
-  background: linear-gradient(#dad8dd, #dad1d4);
+  background: rgba(224, 155, 27, 0.8);
   position: relative;
 
 }
+
+.hero-images::after{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%; /* set to 100% for full overlay width */
+  background: rgba(224,155,27,0.3);
+
+}
+
+
 .hero-elena {
   width: 100%;
   height: 100%;
   object-fit: cover;
+
 }
 
-.hero-images:hover{
-  background-image: url(/img/gallery-2.jpg);
-}
+
 
 
 /* projects */
@@ -366,25 +389,26 @@ button{
 
 .intro-text{
   color: white;
-  font-family: 'Times New Roman', sans-serif;
-  font-size: 2rem;
+  font-family: 'Titillium Web', sans-serif;
   font-weight: 100;
-  letter-spacing: 2px;
   
  
 }
 
 .text{
-  font-size: 6rem;
+  font-size: 8rem;
   font-family: 'Titillium Web', sans-serif;
+  letter-spacing: 2px;
+  font-weight: 100;
 
 }
 
 
 .text-2{
   color: rgb(224, 155, 27);
-  font-size: 4rem;
   letter-spacing: 2px;
+  font-family: 'Titillium Web', sans-serif;
+
 
 
 }
@@ -432,14 +456,14 @@ button{
   opacity: 0;
   transform: translateY(20px);
   transition: 1s all ease-in-out;
-  font-size: 3rem;
   justify-content: center;
-  font-size: 2rem;
+  font-size: 1rem;
   margin-left: 50px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   flex: 1 1 40rem;
   margin-right: 100px;
   font-family: 'Titillium Web', sans-serif;
+  font-weight: 100;
+
   
 
 }
@@ -448,6 +472,8 @@ button{
   font-size: 5rem;
   margin-bottom: 10px;
   font-family: 'Titillium Web', sans-serif;
+  font-weight: 100;
+  letter-spacing: 4px;
 
 }
 
@@ -497,7 +523,7 @@ button{
 }
 #curved-div svg {
   display: flex;
-  background-color: #020d1c;
+  background-color: rgb(2, 13, 28);
 
 }
 #curved-div.upper {
@@ -568,104 +594,112 @@ button{
 
 #projects{
     min-height: 100vh;
-}
+    background-color: white;
+    font-family: 'Titillium Web', sans-serif;
+    display: flex;
+    justify-content: center;
+  }
 
 .project-intro{
-  color: black;
-  display: flex;
   justify-content: center;
-  color: rgb(224, 155, 27);
-  
-}
-
-.box{
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap; 
-  
-}
-
-.box-1{
-  background-color: #020c1b;
+  position: relative;
+  width: 500px;
   height: 600px;
-  width: 300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  border-radius: 30px;
-  margin-top: 30px;
-  
+  background-color: rgb(2, 12, 27);
+  background-position: cover;
+
 }
 
-.box-btn{
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500px;
+  height: 600px;
+  background: rgb(2, 12, 27, 0.8);
+  transition: all 0.5s ease;
+}
+
+.project-intro:hover .overlay{
+  display: block;
+  background: rgba(0, 0, 0, .1);
+
+}
+
+.project-intro img{
+  position: absolute;
+  width: 500px;
+  height: 600px;
+  left: 0;
+  transition: all ease-in-out 1s;
+
+}
+
+.title{
+
+  position: absolute;
+  width: 500px;
+  left: 0;
+  top: 250px;
   font-weight: 700;
-  font-size: 15px;
-  letter-spacing: 1px;
-  color: rgb(224, 155, 27);
-  border: 2px rgb(224, 155, 27) solid;
-  border-radius: 5px;
+  font-size: 50px;
+  letter-spacing: 4px;
+  text-align: center;
   text-transform: uppercase;
-  background: none;
-  cursor: pointer;
-  display: flex;
-  padding: 12px 15px;
-  font-family: 'Titillium Web', sans-serif;
-  letter-spacing: 2px;
+  color: rgb(224, 155, 27);
+  z-index: 1;
+  transition: top .5s ease;
 
 }
 
-.box-btn:hover {
-  color: whitesmoke;
-  background: rgb(224, 155, 27);
+.project-intro:hover .title{
+  top: 170px;
+  color: white;
+  transition: all ease-in-out 0.5s;
+
+
 }
 
-.box-2{
-  background-color: #020c1b;
-  height: 600px;
-  width: 300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.project-button {
+  position: absolute;
+  width: 500px;
+  left:0;
+  top: 300px;
   text-align: center;
-  border-radius: 30px;
-  margin-top: 30px;
+  opacity: 0;
+  transition: opacity .35s ease;
+  color: white;
+  font-weight: 800;
+  letter-spacing: 1px;
   
-  
 
 }
 
-.box-3{
-  background-color: #020c1b;
-  height: 600px;
-  width: 300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.project-button a{
+  width: 200px;
+  padding: 10px 10px;
   text-align: center;
-  border-radius: 30px;
-  margin-top: 30px;
-
- 
+  color: white;
+  border: solid 2px rgb(224, 155, 27);
+  z-index: 2;
+  font-weight: 1000;
+  background-color: rgb(224, 155, 27);
+  border-radius: 4px;
 
 }
-.box-4{
-  background-color: #020c1b;
-  height: 600px;
-  width: 300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  border-radius: 30px;
-  margin-bottom: 50px;
-  margin-top: 30px;
- 
 
+.project-intro:hover .project-button{
+  opacity: 1;
+  color: white;
+   
+}
+
+
+.project-intro:hover img{ 
+ -webkit-transform: scale3d(2,2,1);
+ transform: scale3d(0.9,0.9,1);
+ background-color: rgb(224, 155, 27);
+ transition: all ease-in-out 1s;
 }
 
 
@@ -729,6 +763,10 @@ button{
 .form-wrapper h2 {
   margin: 5rem 0rem;
   color: #fff;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 600;
+
+
 }
 .form-wrapper span {
   font-size: var(--big);
@@ -752,6 +790,15 @@ button{
   color: white;
   border: none;
   width: 100%;
+  cursor: pointer;
+  background-color: none;
+}
+
+.form-wrapper button:hover{
+  color: whitesmoke;
+  background: rgb(113, 113, 199);
+  transition: all 0.3s ease-in-out;
+  
 }
 .contact img {
   flex: 1 1 40rem;
@@ -786,7 +833,7 @@ label{
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   padding: 15px;
-  margin-left: 50px;
+  margin-left: 80px;
 }
 .footer .col h1 {
   margin: 0;
@@ -799,6 +846,8 @@ label{
   font-weight: normal;
   text-transform: uppercase;
   letter-spacing: 0.250em;
+  font-family: 'Titillium Web', sans-serif;
+
 }
 .footer .col ul {
   list-style-type: none;

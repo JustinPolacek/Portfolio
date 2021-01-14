@@ -593,18 +593,19 @@ a .btn:hover {
 
 
 #projects{
-    min-height: 100vh;
+    min-height: 70vh;
     background-color: white;
     font-family: 'Titillium Web', sans-serif;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
   }
 
 .project-intro{
-  justify-content: center;
   position: relative;
-  width: 500px;
-  height: 600px;
+  width: 400px;
+  height: 400px;
   background-color: rgb(2, 12, 27);
   background-position: cover;
 
@@ -614,35 +615,39 @@ a .btn:hover {
   position: absolute;
   top: 0;
   left: 0;
-  width: 500px;
-  height: 600px;
-  background: rgb(2, 12, 27, 0.8);
+  width: 400px;
+  height: 400px;
   transition: all 0.5s ease;
+  background: rgba(2, 12, 27, 0.4);
 }
 
 .project-intro:hover .overlay{
   display: block;
-  background: rgba(0, 0, 0, .1);
+  background: rgba(2, 12, 27, .9);
+  transition: all ease-in-out 1s;
 
 }
 
 .project-intro img{
   position: absolute;
-  width: 500px;
-  height: 600px;
+  width: 400px;
+  height: 400px;
   left: 0;
   transition: all ease-in-out 1s;
+  background-position: center;
+  border-radius: 10px;
+
 
 }
 
 .title{
 
   position: absolute;
-  width: 500px;
+  width: 400px;
   left: 0;
-  top: 250px;
+  top: 150px;
   font-weight: 700;
-  font-size: 50px;
+  font-size: 40px;
   letter-spacing: 4px;
   text-align: center;
   text-transform: uppercase;
@@ -653,7 +658,7 @@ a .btn:hover {
 }
 
 .project-intro:hover .title{
-  top: 170px;
+  top: 120px;
   color: white;
   transition: all ease-in-out 0.5s;
 
@@ -662,9 +667,9 @@ a .btn:hover {
 
 .project-button {
   position: absolute;
-  width: 500px;
+  width: 400px;
   left:0;
-  top: 300px;
+  top: 250px;
   text-align: center;
   opacity: 0;
   transition: opacity .35s ease;
@@ -676,21 +681,24 @@ a .btn:hover {
 }
 
 .project-button a{
-  width: 200px;
   padding: 10px 10px;
   text-align: center;
-  color: white;
+  color: rgb(224, 155, 27);
   border: solid 2px rgb(224, 155, 27);
   z-index: 2;
   font-weight: 1000;
-  background-color: rgb(224, 155, 27);
   border-radius: 4px;
+}
 
+.project-button a:hover{
+  color: white;
+  transition: all ease-in-out 0.5s;
 }
 
 .project-intro:hover .project-button{
   opacity: 1;
   color: white;
+  
    
 }
 
@@ -707,17 +715,17 @@ a .btn:hover {
 
 
 
+/* MODAL */
 
 
 
- 
-  
-  
-  
-  
-  
-  
-  
+
+
+
+
+
+
+
 
 
 

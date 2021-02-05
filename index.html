@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta
       name="FrontEnd Enginner"
@@ -27,7 +27,7 @@
   <body>
     <header class="main-head">
       <nav>
-       <h1 id="logo"> <img src="img/Untitled-2.png"> </h1> 
+       <h1 id="logo"> </h1> 
         <ul class="nav-links">
           <li><a href="#curved-div">01. About</a></li>
           <li><a href="#projects">02. Projects</a></li>
@@ -47,7 +47,7 @@
             Justin Polacek <br /></h2>
           <p>
               I'm a software engineer based in California.</br>
-              Specializing in building, designing, and creating </br>
+              Specializing in building, designing, and  </br>creating 
               Website, Applications, and everything in between.
           </p>
          <a href="#projects"><button class="btn">Projects</button> </a>
@@ -102,11 +102,13 @@
         
         <section class='icons'>
           <div class="curved-text">
-            <h1>About Me
-            </h1>
-            <p>FrontEnd Developer with knowledge of aesthetics integrity and product design, 
-               always looking to further myself and dedicate my passion to Web Development </p> 
+            <div><h1>About Me / Technologies</h1>
+            <p>FrontEnd Developer with knowledge of  </br> aesthetics integrity and </br>brand product design, 
+               always looking to further myself and </br> dedicate my passion to Web Development </p> 
           </div>
+          
+        </section>
+        <div class="iconic">
           <i class="devicon-react-original-wordmark colored"></i>
           <i class="devicon-html5-plain-wordmark colored"></i>
           <i class="devicon-css3-plain-wordmark colored"></i>
@@ -119,24 +121,39 @@
           <i class="devicon-illustrator-line"></i>
           <i class="devicon-premierepro-plain colored"></i>
           <i class="devicon-git-plain-wordmark colored"></i>
-        </section>
-        <svg viewBox="0 0 1440 319">
-          <path fill="#fff" fill-opacity="1" d="M0,32L48,80C96,128,192,224,288,224C384,224,480,128,576,90.7C672,53,768,75,864,96C960,117,1056,139,1152,149.3C1248,160,1344,160,1392,160L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-        </svg>
+          </div>
       </div>  
       </section>
          
+      <!-----<div class="project-info">
+        <h1>Some things i've built</h1>
+        </div>
 
+      -->
       <!---------PROJECTS--------->
       <section id="projects">
         <div class="project-intro">
+          
           <img src="/img/super8.png">
           <p class="title">SUPER 8 SHOES</p>
           <div class="overlay"></div>
           <div class="project-button"><a href="super.html">VIEW PROJECT</a></div>
         </div>
+        <div class="project-intro">
+          <img src="/img/chocolate1.png">
+          <p class="title">CHOCOLATE</p>
+          <div class="overlay"></div>
+          <div class="project-button"><a href="chocolate.html">VIEW PROJECT</a></div>
+        </div>
 
-          <!--------MODAL-------->
+        <div class="project-intro">
+          <img src="/img/chocolate1.png">
+          <p class="title">CHOCOLATE</p>
+          <div class="overlay"></div>
+          <div class="project-button"><a href="chocolate.html">VIEW PROJECT</a></div>
+        </div>
+        
+
 
           
 
@@ -186,9 +203,7 @@
     <!-- FOOTER START -->
     <div class="footer">
       <div class="contain">
-      <div class="col">
-        <h1>01.Home</h1>
-      </div>
+      
       <div class="col">
         <h1>02.About</h1>
        
@@ -218,12 +233,13 @@
 
 
   
-      <script
+     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
       integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
       crossorigin="anonymous"
     ></script>
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     <script src="app.js"></script>
+    
   </body>
 </html>
